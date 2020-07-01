@@ -45,16 +45,38 @@ Optional arguements include  Program ID, slitwidth (default of 1 arcsec), positi
 The image is saved in the same directory, as the Target name fc.jpg    
 ![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_fc.jpg)
 
+The utility of the GAIA synthetic images can be seen when you compare to the DSS finding chart created using the following command
+
+    gfc.gmos_twotarget("AL18_688+ALS18_689", '17h36m35.414s', '-33d30m12.7s', '17h36m36.11s', '-33d30m58.61s', slitwidth=2, pnum='GS-2020A-403')
+    
+![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_dss.jpg)
+
+
 
 
 *2. GMOS blind offset acqusition, using DSS images*
 
 Creating a GMOS finding chart for a blind offset acqusition using DSS images. You must enter the target name, Base and User 1 coordinates. Additional arguements include the sky survey (deafults to DSS), which can be chosen from https://astroquery.readthedocs.io/en/latest/skyview/skyview.html  
 
-    gfc.gmos_blindoffset("
+    gfc.gmos_blindoffset('SDSSQuasar', '20h54m0.8016s', '-00d05m29.04s', '20h54m07.678s', '-00d05m31.92s')
+    ...
+    Finding chart saved as SDSSQuasar_fc.jpg    
+
+We see now that the finding chart, and also that the default choice of scalebar position does not cover the compass.
+![Image of QUASAR](https://github.com/astroquackers/gmosfc/blob/master/SDSSQuasar_fc.jpg)
+
+
+
+*3. GMOS long slit target with position angle
+
+A bright single target, with a desired position angle is entered as
     
+    gfc.gmos_longslit('HD99', HD99', 001.492803, +44.739380, pa=123.4)
     
+With the resulting finding chart
+![HD99]((https://github.com/astroquackers/gmosfc/blob/master/HD99_fc.jpg)
     
+
 For further information, please see documentation.     
     
 Citing
