@@ -30,15 +30,21 @@ Examples
 
 Once installed, you can begin generating quick finding charts for a variety of GMOS modes.
 
-Creating a GMOS finding chart for a two target acqusition using synthetic GAIA DR2 images. You must enter the target name, and User 1 and User 2 coordinates. Optional arguements include  Program ID, slitwidth (default of 1 arcsec), and the position of the scalebar. The desired position angle, and the Base coordinates are calculated automatically, and saved to the log. Do not use the GAIA synthetic images if your target is a galaxy. 
+
+*1. GMOS two target acqusition, using synthetic GAIA DR2 images*
+
+Create a GMOS finding chart for a two target acqusition using synthetic GAIA DR2 images. You must enter the target name, and User 1 and User 2 coordinates in the astropy.SkyCoord format. The desired position angle, and the Base coordinates are calculated, and saved to the log.
+Optional arguements include  Program ID, slitwidth (default of 1 arcsec), position of the scalebar, and SkyCoord options unit, frame, and epoch. Do not use the GAIA synthetic images if your target is a galaxy. 
 
     import gmosfc as gfc
     gfc.gmos_twotarget_gaiasyn("AL18_688+ALS18_689", '17h36m35.414s', '-33d30m12.7s', '17h36m36.11s', '-33d30m58.61s', slitwidth=2, pnum='GS-2020A-403', corner='bottom right')     
     ...
     
+    
        
 Creating a GMOS finding chart for a blind offset acqusition using DSS images. You must enter the target name, Base and User 1 coordinates. Additional arguements include the sky survey (deafults to DSS), which can be chosen from https://astroquery.readthedocs.io/en/latest/skyview/skyview.html  
 
+    gfc.gmos_blindoffset("
     
     
     
