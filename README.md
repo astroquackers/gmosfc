@@ -39,8 +39,11 @@ Optional arguements include  Program ID, slitwidth (default of 1 arcsec), positi
     import gmosfc as gfc
     gfc.gmos_twotarget_gaiasyn("AL18_688+ALS18_689", '17h36m35.414s', '-33d30m12.7s', '17h36m36.11s', '-33d30m58.61s', slitwidth=2, pnum='GS-2020A-403', corner='bottom right')     
     ...
+    Finding chart saved as AL18_688+ALS18_689_fc.jpg
+    Cleaning up
     
-
+The image is saved in the same directory, as the Target name fc.jpg    
+.. image::https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_fc.jpg
 
 *2. GMOS blind offset acqusition, using DSS images*
 
