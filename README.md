@@ -74,7 +74,7 @@ A bright single target, with a desired position angle is entered as
     gfc.gmos_longslit('HD99', HD99', 001.492803, +44.739380, pa=123.4)
     
 With the resulting finding chart
-![HD99]((https://github.com/astroquackers/gmosfc/blob/master/HD99_fc.jpg)
+![HD99](https://github.com/astroquackers/gmosfc/blob/master/HD99_fc.jpg)
     
 
 For further information, please see documentation.     
