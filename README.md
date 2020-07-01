@@ -43,7 +43,9 @@ Optional arguements include  Program ID, slitwidth (default of 1 arcsec), positi
     Cleaning up
     
 The image is saved in the same directory, as the Target name fc.jpg    
-.. image::https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_fc.jpg
+![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_fc.jpg)
+
+
 
 *2. GMOS blind offset acqusition, using DSS images*
 
