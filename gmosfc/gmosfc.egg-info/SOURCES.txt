@@ -1,0 +1,10 @@
+setup.py
+gmosfc/__init__.py
+gmosfc/fc_gaia.py
+gmosfc/fc_skyquery.py
+gmosfc/fcutils.py
+gmosfc.egg-info/PKG-INFO
+gmosfc.egg-info/SOURCES.txt
+gmosfc.egg-info/dependency_links.txt
+gmosfc.egg-info/requires.txt
+gmosfc.egg-info/top_level.txt
