@@ -11,13 +11,13 @@ Installing
 
 The following dependencies are required:
 
-* [Python] (https://www.python.org/download/releases/3.0/) 3.7.1 or later
-* [Numpy] (http://www.numpy.org) 1.11 or later
-* [Matplotlib] (http://www.matplotlib.org) 3.1.1 or later
-* [Astropy] (http://www.astropy.org) 4.0 or later
-* [Astroquery] (https://astroquery.readthedocs.io/en/latest/) 0.4 or later
-* [APLpy] (https://aplpy.github.io/) 2.0.2 or later
-* [photutils] (https://photutils.readthedocs.io/en/stable/) 0.7.2 or later
+* [Python](https://www.python.org/download/releases/3.0/) 3.7.1 or later
+* [Numpy](http://www.numpy.org) 1.11 or later
+* [Matplotlib](http://www.matplotlib.org) 3.1.1 or later
+* [Astropy](http://www.astropy.org) 4.0 or later
+* [Astroquery](https://astroquery.readthedocs.io/en/latest/) 0.4 or later
+* [APLpy](https://aplpy.github.io/) 2.0.2 or later
+* [photutils](https://photutils.readthedocs.io/en/stable/) 0.7.2 or later
 
 You can install APLpy and all its dependencies with:
 
