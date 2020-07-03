@@ -83,8 +83,6 @@ def make_gaia(coords, image=os.path.join('.','synthetic_gaia.fits'), epoch="J202
     searchresults = gaiasearch.get_results()
     nstars = len(searchresults)
     print(nstars, 'stars recovered from GAIA TAP+ query over the GMOS FoV')
-    if nstars == 2000:
-       warnings.warn('Asynchronous TAP+ service query limit reached, image is incomplete.')
 
 
     fitshdr = mkfitshdr(coords, zeroarr, image, epoch)
