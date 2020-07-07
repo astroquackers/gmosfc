@@ -43,13 +43,13 @@ Optional arguements include  Program ID, slitwidth (default of 1 arcsec), positi
     Cleaning up
     
 The image is saved in the same directory, as the Pismis24-17+Pismis24-16_fc.jpg    
-![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_fc.jpg)
+![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/images/Pismis24-17%2BPismis24-16_fc_gaia.jpg)
 
 The utility of the GAIA synthetic images can be seen when you compare to the DSS finding chart created using the following command (see the zoomed in comparison)
 
     gfc.gmos_twotarget("Pismis24-17+Pismis24-16", 261.186378, -34.200760, 261.185225, -34.199680, slitwidth=2, pnum='GS-2020A-Q-403', markersize=15, markersizecentral=0)
     
-![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_dss.jpg)
+![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/images/Pismis24-17%2BPismis24-16_fc.jpg)
 
 Looking at the zoomed in comparison of the GAIA synthetic and DSS finding charts, the image quality is apparent, as is the usefullness for the observer.  
 
@@ -65,7 +65,7 @@ Creating a GMOS finding chart for a blind offset acqusition using DSS images. Yo
     Finding chart saved as SDSSQuasar_fc.jpg    
 
 We see now that the finding chart, and also that the default choice of scalebar position does not cover the compass.
-![Image of quasar](https://github.com/astroquackers/gmosfc/blob/master/SDSSQuasar_fc.jpg)
+![Image of quasar](https://github.com/astroquackers/gmosfc/blob/master/images/SDSSQuasar_fc.jpg)
 
 
 *3. GMOS long slit target with position angle*
@@ -75,7 +75,7 @@ A bright single target, with a desired position angle is entered as
     gfc.gmos_longslit('HD99', HD99', 001.492803, +44.739380, pa=123.4)
     
 With the resulting finding chart
-![HD99](https://github.com/astroquackers/gmosfc/blob/master/HD99_fc.jpg)
+![HD99](https://github.com/astroquackers/gmosfc/blob/master/images/HD99_fc.jpg)
     
 
 For further information, please see documentation.     
@@ -89,4 +89,4 @@ If you have found this snippet useful, please give us a star.
 Contact
 ----------
 
-If you have issues with the code, please contact the author at vkalari@gemini.edu
+If you have issues with the code, please contact the author at vkalari@gemini.edu.
