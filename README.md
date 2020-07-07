@@ -65,7 +65,7 @@ Creating a GMOS finding chart for a blind offset acqusition using DSS images. Yo
     ...
     Finding chart saved as SDSSQuasar_fc.jpg    
 
-We see now that the finding chart, and also that the default choice of scalebar position does not cover the compass.
+We see now that the finding chart.
 ![Image of quasar](https://github.com/astroquackers/gmosfc/blob/master/images/SDSSQuasar_fc.jpg)
 
 
@@ -98,7 +98,7 @@ If you have issues with the code, please contact the author at vkalari@gemini.ed
 Disclaimer
 ----------
 
-This is code is not officially endorsed software from the Gemini Observatory. The package is provided for convenience , and the author does not claim accuracy of the finding charts. It remains the responsability of the PI to ensure that accurate finding charts are provided.
+This is code is not officially endorsed software from the Gemini Observatory. The package is provided for convenience , and the author does not claim accuracy of the finding charts. It remains the responsibility of the PI to ensure that accurate finding charts are provided.
 
 
 
