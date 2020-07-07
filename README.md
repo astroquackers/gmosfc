@@ -37,21 +37,23 @@ Create a GMOS finding chart for a two target acqusition using synthetic GAIA DR2
 Optional arguements include  Program ID, slitwidth (default of 1 arcsec), position of the scalebar, and SkyCoord options unit, frame, and epoch. Do not use the GAIA synthetic images if your target is a galaxy. 
 
     import gmosfc as gfc
-    gfc.gmos_twotarget_gaiasyn("AL18_688+ALS18_689", '17h36m35.414s', '-33d30m12.7s', '17h36m36.11s', '-33d30m58.61s', slitwidth=2, pnum='GS-2020A-403', corner='bottom right')     
+    gfc.gmos_twotarget_gaiasyn("Pismis24-17+Pismis24-16", 261.186378, -34.200760, 261.185225, -34.199680, slitwidth=2, pnum='GS-2020A-Q-403', markersize=25, markersizecentral=0)     
     ...
-    Finding chart saved as AL18_688+ALS18_689_fc.jpg
+    Finding chart saved as Pismis24-17+Pismis24-16_fc.jpg
     Cleaning up
     
-The image is saved in the same directory, as the Target name fc.jpg    
+The image is saved in the same directory, as the Pismis24-17+Pismis24-16_fc.jpg    
 ![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_fc.jpg)
 
-The utility of the GAIA synthetic images can be seen when you compare to the DSS finding chart created using the following command
+The utility of the GAIA synthetic images can be seen when you compare to the DSS finding chart created using the following command (see the zoomed in comparison)
 
-    gfc.gmos_twotarget("AL18_688+ALS18_689", '17h36m35.414s', '-33d30m12.7s', '17h36m36.11s', '-33d30m58.61s', slitwidth=2, pnum='GS-2020A-403')
+    gfc.gmos_twotarget("Pismis24-17+Pismis24-16", 261.186378, -34.200760, 261.185225, -34.199680, slitwidth=2, pnum='GS-2020A-Q-403', markersize=15, markersizecentral=0)
     
 ![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_dss.jpg)
 
+Looking at the zoomed in comparison of the GAIA synthetic and DSS finding charts, the image quality is apparent, as is the usefullness for the observer.  
 
+![Image of Zoom](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_dss.jpg)
 
 
 *2. GMOS blind offset acqusition, using DSS images*
