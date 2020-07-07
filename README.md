@@ -3,7 +3,7 @@ gmosfc
 
 **Handy GMOS finding chart generator.**
 
-gmosfc generates finding charts for Gemini-GMOS spectroscopy, using either archival sky survey images, or by generating synthetic images from GAIA DR2 photometry. 
+gmosfc generates finding charts for Gemini-GMOS spectroscopy, using either archival sky survey images, or by generating synthetic images from GAIA DR2 photometry. gmosfc should be able to generate accurate finding charts for most GMOS spectroscopic modes or targets. If it is unable to do so, please contact us at vkalari@gemini.edu. 
 
 
 Installing
@@ -34,7 +34,8 @@ Once installed, you can begin generating quick finding charts for a variety of G
 *1. GMOS two target acqusition, using synthetic GAIA DR2 images*
 
 Create a GMOS finding chart for a two target acqusition using synthetic GAIA DR2 images. You must enter the target name, and User 1 and User 2 coordinates in the astropy.SkyCoord format. The desired position angle, and the Base coordinates are calculated, and saved to the log.
-Optional arguements include  Program ID, slitwidth (default of 1 arcsec), position of the scalebar, and SkyCoord options unit, frame, and epoch. Do not use the GAIA synthetic images if your target is a galaxy. 
+Optional arguements include  Program ID, slitwidth (default of 1 arcsec), position of the scalebar, and SkyCoord options unit, frame, and epoch. 
+*Do not use the GAIA synthetic images if your target is a galaxy.*
 
     import gmosfc as gfc
     gfc.gmos_twotarget_gaiasyn("Pismis24-17+Pismis24-16", 261.186378, -34.200760, 261.185225, -34.199680, slitwidth=2, pnum='GS-2020A-Q-403', markersize=25, markersizecentral=0)     
@@ -51,9 +52,9 @@ The utility of the GAIA synthetic images can be seen when you compare to the DSS
     
 ![Image of ALS](https://github.com/astroquackers/gmosfc/blob/master/images/Pismis24-17%2BPismis24-16_fc.jpg)
 
-Looking at the zoomed in comparison of the GAIA synthetic and DSS finding charts, the image quality is apparent, as is the usefullness for the observer.  
+Looking at the zoomed in comparison of the GAIA synthetic and DSS finding charts, the image quality is apparent as the two targets are resolved (similar to what they would be in an 8m telescope image), as is the usefullness for the observer.  
 
-![Image of Zoom](https://github.com/astroquackers/gmosfc/blob/master/AL18_688%2BALS18_689_dss.jpg)
+![Image of Zoom](https://github.com/astroquackers/gmosfc/blob/master/images/comp.jpg)
 
 
 *2. GMOS blind offset acqusition, using DSS images*
@@ -79,14 +80,25 @@ With the resulting finding chart
     
 
 For further information, please see documentation.     
+
     
 Citing
 ------
 
-If you have found this snippet useful, please give us a star.
+If you have found this package useful, please give us a star.
+This code was funded partly by the Gemini-Conicyt grant 32RF180005, and the Gemini Observatory. 
 
 
 Contact
 ----------
 
 If you have issues with the code, please contact the author at vkalari@gemini.edu.
+
+
+Disclaimer
+----------
+
+This is code is not officially endorsed software from the Gemini Observatory. The package is provided for convenience , and the author does not claim accuracy of the finding charts. It remains the responsability of the PI to ensure that accurate finding charts are provided.
+
+
+
