@@ -66,7 +66,7 @@ We see now that the finding chart, and also that the default choice of scalebar 
 ![Image of quasar](https://github.com/astroquackers/gmosfc/blob/master/SDSSQuasar_fc.jpg)
 
 
-*3. GMOS long slit target with position angle
+*3. GMOS long slit target with position angle*
 
 A bright single target, with a desired position angle is entered as
     
