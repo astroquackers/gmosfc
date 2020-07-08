@@ -248,6 +248,7 @@ Similar functions are available using the astroquery sky surveys. The available 
 
 5. Blind offset GMOS target with astroquery skyview surveys
 
+```python
     def gmos_blindoffset(name, ra1, dec1, rablind, decblind, pm_ra_cosdec=0.0, pm_dec=0.0, pa=0.0, slitwidth=1, pnum='Gemini GMOS Spectroscopy', skysurvey='DSS', frame='fk5', unit='deg', epoch='J2000', time_obs='J2020', corner='bottom left', markersize=75):
 
 
