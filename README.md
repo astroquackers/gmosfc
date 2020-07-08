@@ -86,7 +86,6 @@ Citing
 ------
 
 If you have found this package useful, please give us a star.
-This code was funded partly by the Gemini-Conicyt grant 32RF180005, and the Gemini Observatory. 
 
 
 Contact
@@ -99,6 +98,13 @@ Disclaimer
 ----------
 
 This is code is not officially endorsed software from the Gemini Observatory. The package is provided for convenience , and the author does not claim accuracy of the finding charts. It remains the responsibility of the PI to ensure that accurate finding charts are provided.
+
+
+Acknowledgements
+----------
+This code makes use of the Python packages astropy, APLpy, astroquery, numpy, matplotlib, and photutils. It was also inspired in part by the python package fcmaker. This code was funded by the Gemini-Conicyt grant 32RF180005, and the Gemini Observatory. 
+
+
 
 
 
