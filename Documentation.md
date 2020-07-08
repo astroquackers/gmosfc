@@ -24,4 +24,53 @@ The available functions for gfc using synthetic GAIA DR2 images are
 
 ```python
 gmos_longslit_gaiasyn(name, ra1, dec1, pm_ra_cosdec=0.0, pm_dec=0.0, pa=0.0, slitwidth=1, pnum='Gemini GMOS Spectroscopy', frame='fk5', unit='deg', epoch='J2000', time_obs='J2020', corner='bottom left', markersize=75):
+
+    """
+    Function to create gmos finding charts from synthetic gaia images, given the target coordinates, proper motions and epoch of observation.
+    Currently, the proper motion translation of the final finding charts is disabled, and the finding chart is produced in J2000 coordinate system.  However,  the proper motion of the target is calculated for the observational epoch. If the new coordinates are significantly different to the (1st decimal degree) J2000 coordinates, the finding charts maybe inaccurate.
+    
+    Returns finding charts for single GMOS target at given coordinates.
+    
+    Parameters:
+    name: String
+    The name of the target.
+    
+    ra1: float
+    Right Ascension of the target in J2000 FK5 system. In astropy system
+    
+    dec1: float
+    Declination of the target in J2000 FK5 system. In astropy system.
+    
+    pm_ra_cosdec: float, optional
+    Proper motion of the target in mas/yr. Depreciated.
+    
+    pm_dec: float, optional
+    Proper motion of the target in mas/yr. Depreciated.
+    
+    pa: float, optional
+    Position angle of the target in decimal degrees. Must be between 0 and 360. Default is 0, not parallitic.
+    
+    slitwidth: float, optional
+    Slit width of the GMOS slit in arcsec. Default is 1 arcsec.
+    
+    pnum: String, optional
+    Gemini Program ID. Defaults to GMOS spectropscopy.
+    
+    unit: string, or tuple, optional
+    Units of the coordinates following astropy.Skycoord system. Default is decimal degrees.
+    
+    epoch: String, optional
+    Epoch of the coordinates of the target. Default is set to J2000.
+    
+    time_obs: String, optional
+    Epoch of when the obsevations will take place. Default is J2020.
+    
+    corner: String, optional
+    Position of scalebar in the finding chart, following from aplpy convention
+    Acceptable values are top right, top left, bottom right, bottom left, left, right, bottom or top.
+
+    markersize: float, optional
+    Marker size of the symbol for the target. Default is 75.
+    """
+
 ```
