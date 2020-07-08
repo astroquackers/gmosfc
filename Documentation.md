@@ -22,3 +22,6 @@ We can know run functions avaiable in gmosfc as
     
 The available functions for gfc using synthetic GAIA DR2 images are
 
+```python
+gmos_longslit_gaiasyn(name, ra1, dec1, pm_ra_cosdec=0.0, pm_dec=0.0, pa=0.0, slitwidth=1, pnum='Gemini GMOS Spectroscopy', frame='fk5', unit='deg', epoch='J2000', time_obs='J2020', corner='bottom left', markersize=75):
+```
