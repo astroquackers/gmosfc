@@ -16,7 +16,7 @@ Before beginning, we need to import gmosfc
 
     import gmosfc as gfc
     
-We can know run functions avaiable in gmosfc as
+We can now run functions avaiable in gmosfc as
  
     gfc.gmos_blindoffset()
     
