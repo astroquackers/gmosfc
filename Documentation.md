@@ -386,3 +386,22 @@ Similar functions are available using the astroquery sky surveys. The available 
     """
 
 ```
+
+Finally, if you dislike the finding charts, but would like to quickly generate GAIA synthetic images, you can use the function to create synthetic GAIA images. The field of view, and the FWHM cannot be changed. The FoV is 390 arcsec, while the FWHM is 0.3 arcsec. 
+
+```python
+    def make_gaia(coords, image=os.path.join('.','synthetic_gaia.fits'), epoch="J2020.5"):
+    """
+    Creates a synthetic image from GAIA DR2 photometry along the specified coordinates.
+
+    Returns the synthetic image in fits format.
+
+    Parameters:
+    coords: Coordinates of centre of image. In astropy format. 
+    
+    image: File name of image. Default is synthetic_gaia.fits
+    
+    epoch: Epoch to translate image. Default is J2020.5
+    
+    """
+```
