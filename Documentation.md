@@ -20,6 +20,8 @@ We can now run functions avaiable in gmosfc as
  
     gfc.gmos_blindoffset()
     
+All coordinates used are in astropy SkyCoord format, described here https://docs.astropy.org/en/stable/api/astropy.coordinates.SkyCoord.html
+    
 The available functions for gfc using synthetic GAIA DR2 images are
 
 1. Longslit GMOS target with synthetic GAIA images
